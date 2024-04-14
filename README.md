@@ -70,6 +70,18 @@ pulumi stack select --create $GITHUB_USER/pulumi-kubernetes/kind
 pulumi up
 ```
 
+Alternatively, you can deploy the network policy and app this way:
+
+#### App
+```
+kubectl create -f https://raw.githubusercontent.com/cilium/cilium/1.15.4/examples/minikube/http-sw-app.yaml
+```
+
+#### Policy
+```
+kubectl create -f https://raw.githubusercontent.com/cilium/cilium/1.15.4/examples/minikube/sw_l3_l4_policy.yaml
+```
+
 #### 3. Cleanup
 
 ```bash
