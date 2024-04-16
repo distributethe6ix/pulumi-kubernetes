@@ -69,6 +69,14 @@ pulumi stack select --create $GITHUB_USER/pulumi-kubernetes/kind
 # Pulumi Deploy Stack
 pulumi up
 ```
+```
+kubectl exec tiefighter -- curl -s -XPOST deathstar.empire.svc.cluster.local/v1/request-landing
+```
+```
+kubectl exec xwing -- curl -s -XPOST deathstar.empire.svc.cluster.local/v1/request-landing
+```
+
+
 
 #### 3. Cleanup
 
